@@ -1,3 +1,4 @@
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -6,7 +7,7 @@
  '(ansi-color-names-vector
    ["#2d3743" "#ff4242" "#74af68" "#dbdb95" "#34cae2" "#008b8b" "#00ede1" "#e1e1e0"])
  '(custom-enabled-themes (quote (manoj-dark)))
- '(inhibit-startup-screen t))
+ '(inhibit-startup-screen t)) 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -24,7 +25,7 @@
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 (add-to-list 'load-path "~/EmacsModes/ESS/lisp/")
 (add-to-list 'load-path "~/EmacsModes/")
-(load "ess-site")
+;;(load "ess-site")
 (global-linum-mode 1)
 (load "dark-mint-theme-master/dark-mint-theme.el")
 (add-to-list 'auto-mode-alist '("\\.php$" . html-mode))
@@ -54,5 +55,5 @@
 ;;     python-shell-interpreter-args "--simple-prompt -i")
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize)  ;load and activate packages, including auto-complete
-(ac-config-default)
+(require 'auto-complete)
 (global-auto-complete-mode t)
